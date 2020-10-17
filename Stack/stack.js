@@ -35,11 +35,14 @@ starTrek.push('Scotty')
 display(starTrek)
 
 function peek(stack) {
-    return stack.top
+    console.log(stack.top.data)
 }
 
 function isEmpty(stack) {
-    return (stack.top)
+    if(stack.top){
+      console.log(false)
+    }
+  else console.log(true)
 }
 
 function display(stack) {
@@ -54,5 +57,6 @@ function display(stack) {
 
 starTrek.pop()
 starTrek.pop()
-
+isEmpty(starTrek)
+peek(starTrek)
 display(starTrek)
